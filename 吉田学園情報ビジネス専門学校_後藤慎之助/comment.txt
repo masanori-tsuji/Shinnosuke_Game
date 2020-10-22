@@ -1,0 +1,14 @@
+# コメント
+ # 1
+	void CEnemy::Update(void)
+	    switch (m_type)
+	コードが過ぎて見づらいのでタイプに応じて関数などを進める。
+	全体的に他のソースでもSwitchCaseで冗長になってる。
+
+ # 2
+	HRESULT CEnemy::Load(void)
+	ロードするファイルはコードに含めずに外部ファイルにする。
+
+ # 3
+	void CGame::Uninit(void)
+	初期化でnewして使わなくなったものは終了処理で開放する。
